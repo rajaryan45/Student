@@ -4,6 +4,15 @@ public class Human {
 	private String name;
 	private int age;
 	private char gender;
+	
+	
+	public Human(String name, int age, char gender) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+	}
+	
 	public String getName() {
 		return name;
 	}
