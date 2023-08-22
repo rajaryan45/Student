@@ -39,6 +39,7 @@ public class Student extends Human{
 	
 	public void showDetails() {
 		System.out.println("Name : " + this.getName() + "\nAge : " + this.getAge() + "\nGender : " +this.getGender() );
+		System.out.println("Roll : " + this.getRoll() + "\nClass : " + this.getCls() + "\nSection : " +this.getSec());
 	}
 	 
 }
