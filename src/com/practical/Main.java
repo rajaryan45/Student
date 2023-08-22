@@ -12,7 +12,7 @@ public class Main {
 		refStudent2.showDetails();
 		
 		System.out.println("Raj Aryan && Shrishti Priya");
-
+		System.out.println("Student Project for Practice");
 	}
 
 }
