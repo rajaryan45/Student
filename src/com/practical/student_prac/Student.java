@@ -9,7 +9,7 @@ public class Student extends Human{
 	private int cls;
 	private char sec;
 	private int subCount=0;
-	private ArrayList<Subject> subjects ;
+	private ArrayList<Subject> subjectsArrayList;
 
 	
 	public Student(String name, int age, char gender) {
@@ -54,20 +54,33 @@ public class Student extends Human{
 			System.out.println("Enter the number of subjects:");
 			this.setSubCount(sc.nextInt());
 			sc.nextLine();
-			
+			subjectsArrayList = new ArrayList<Subject>(subCount);
 			for(int i=0;i<this.subCount;i++) {
 				Subject refSubject = new Subject();
-				System.out.println("\nEnter Subject " +(i+1) + "name :" );
-				refSubject.setSubName(sc.nextLine());
+				System.out.println("\nEnter Subject " +(i+1) + " name :" );
+				String nameString = sc.nextLine();
+				refSubject.setSubName(nameString);
 				System.out.println("Enter Mark " +(i+1) + " : ");
-				refSubject.setMarks(sc.nextInt());
+				int mark = sc.nextInt();
 				sc.nextLine();
-				subjects.add(refSubject);
+				refSubject.setMarks(mark);
+				subjectsArrayList.add(refSubject);
 			}
 		}catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("Exception : " + e.getMessage() + " : " );
+			e.printStackTrace();
 		}
 			
+	}
+	public void getSubjectsDetails() {
+		try {
+			System.out.println("\nNumber of Subjects : " + this.getSubCount());
+			for(int i = 0 ; i<this.getSubCount();i++) {
+				System.out.println("\nSubject Name : "+subjectsArrayList.get(i).getSubName() + "\nMark : " + subjectsArrayList.get(i).getMarks());
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 	public void showDetails() {
 		System.out.println("Name : " + this.getName() + "\nAge : " + this.getAge() + "\nGender : " +this.getGender() );
