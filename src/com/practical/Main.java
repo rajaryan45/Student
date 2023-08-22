@@ -10,6 +10,8 @@ public class Main {
 		System.out.println("\n\n");
 		Student refStudent2 = new Student("Raj", 23, 'M', 41, 12, 'C');
 		refStudent2.showDetails();
+		
+		System.out.println("Raj Aryan && Shrishti Priya");
 
 	}
 
