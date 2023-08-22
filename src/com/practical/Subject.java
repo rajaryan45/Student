@@ -1,4 +1,4 @@
-package com.practical;
+package com.practical.student_pac;
 
 public class Subject {
 	private int marks;
