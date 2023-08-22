@@ -1,10 +1,14 @@
-package com.practical;
+package com.practical.student_pac;
+
+import java.util.ArrayList;
 
 public class Student extends Human{
 
 	private int roll;
 	private int cls;
 	private char sec;
+	private int subCount;
+	private ArrayList<Subject> subjects;
 	
 	public Student(String name, int age, char gender) {
 		super(name, age, gender);
@@ -35,7 +39,8 @@ public class Student extends Human{
 	public void setSec(char sec) {
 		this.sec = sec;
 	}
-
+	
+	
 	
 	public void showDetails() {
 		System.out.println("Name : " + this.getName() + "\nAge : " + this.getAge() + "\nGender : " +this.getGender() );
