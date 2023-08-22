@@ -79,7 +79,8 @@ public class Student extends Human{
 				System.out.println("\nSubject Name : "+subjectsArrayList.get(i).getSubName() + "\nMark : " + subjectsArrayList.get(i).getMarks());
 			}
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("Exception : " + e.getMessage() + " : " );
+			e.printStackTrace();
 		}
 	}
 	public void showDetails() {
