@@ -1,4 +1,4 @@
-package com.practical.student_pac;
+package com.practical.student_prac;
 
 public class Human {
 	private String name;
