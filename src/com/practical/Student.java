@@ -9,7 +9,6 @@ public class Student extends Human{
 	public Student(String name, int age, char gender) {
 		super(name, age, gender);
 	}
-
 	public Student(String name, int age, char gender, int roll, int cls, char sec) {
 		super(name, age, gender);
 		this.roll = roll;
@@ -20,15 +19,12 @@ public class Student extends Human{
 	public int getRoll() {
 		return roll;
 	}
-
 	public void setRoll(int roll) {
 		this.roll = roll;
 	}
-
 	public int getCls() {
 		return cls;
 	}
-
 	public void setCls(int cls) {
 		this.cls = cls;
 	}
@@ -36,15 +32,13 @@ public class Student extends Human{
 	public char getSec() {
 		return sec;
 	}
-
 	public void setSec(char sec) {
 		this.sec = sec;
 	}
+
 	
-	
-	
-	
-	
-	
+	public void showDetails() {
+		System.out.println("Name : " + this.getName() + "\nAge : " + this.getAge() + "\nGender : " +this.getGender() );
+	}
 	 
 }
