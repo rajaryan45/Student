@@ -4,11 +4,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Student refStudent = new Student("Shrishti", 21, 'F');
-		refStudent.showDetails();
+//		Student refStudent = new Student("Shrishti", 21, 'F');
+//		refStudent.showDetails();
 		
 		System.out.println("\n\n");
-		Student refStudent2 = new Student("Raj", 23, 'M', 41, 12, 'C');
+		Student refStudent2 = new Student("Shristhi", 23, 'F', 40, 12, 'C');
 		refStudent2.showDetails();
 		refStudent2.setSubjects();
 		refStudent2.getSubjectsDetails();
