@@ -1,5 +1,5 @@
 package com.practical.jdbc_prac;
 
-public class TeacherDao {
+public class TeacherDao extends DatabaseDao{
 
 }

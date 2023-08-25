@@ -3,7 +3,7 @@ package com.practical.student_prac;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import com.practical.jdbc_prac.DatabaseDao;
+import com.practical.jdbc_prac.StudentDao;
 
 public class Student extends Human{
 
@@ -21,9 +21,9 @@ public class Student extends Human{
 		super(name, age, gender);
 		this.roll = roll;
 		this.cls = cls;
-		this.sec = sec;
-		DatabaseDao dao = new DatabaseDao();
-		dao.setStudentData(this);
+		this.sec = sec;		
+		StudentDao studentDao = new StudentDao();
+		studentDao.setStudentData(this);
 	}
 	
 	public int getSubCount() {
