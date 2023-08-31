@@ -22,8 +22,6 @@ public class Student extends Human{
 		this.roll = roll;
 		this.cls = cls;
 		this.sec = sec;		
-		StudentDao studentDao = new StudentDao();
-		studentDao.setStudentData(this);
 	}
 	
 	public int getSubCount() {
