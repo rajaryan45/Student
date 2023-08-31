@@ -37,7 +37,6 @@ public class DatabaseDao {
 		try {
 			connection.close();
 			preparedStatement.close();
-			statement.close();
 			resultSet.close();
 		} catch (Exception e) {
 			System.out.println("Exception : " + e.getMessage() + " : " );
